@@ -84,5 +84,10 @@ namespace galeria
             zdjecia.ElementAt(index).lPolubien++;
             polubienia.Text = zdjecia.ElementAt(index).lPolubien.ToString();
         }
+        private void dodaj(object sender, RoutedEventArgs e)
+        {
+            dodanie dodanie = new dodanie();
+            dodanie.ShowDialog();
+        }
     }
 }
