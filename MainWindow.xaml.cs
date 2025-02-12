@@ -75,8 +75,8 @@ namespace galeria
         {
             zdjecia.ElementAt(index).lWyswietlen++;
             obraz.Source = new BitmapImage(new Uri( zdjecia.ElementAt(index).source,UriKind.Relative));
-            wyswietlenia.Text = zdjecia.ElementAt(index).lWyswietlen.ToString();
-            polubienia.Text = zdjecia.ElementAt(index).lPolubien.ToString();
+            wyswietlenia.Text = "wyswietlenia: "+ zdjecia.ElementAt(index).lWyswietlen.ToString();
+            polubienia.Text = "polubienia: "+ zdjecia.ElementAt(index).lPolubien.ToString();
         }
 
         private void polub(object sender, RoutedEventArgs e)

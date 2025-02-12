@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
-        <Image x:Name="obraz"  Width="100" Height="100" Source="zdj/zdj1.png"></Image>
-        <StackPanel Orientation="Horizontal">
+        <Image x:Name="obraz"  Width="400" Height="300" Source="zdj/zdj1.png"></Image>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Width="50" Height="50" Click="lewo">
                 <Image Source="lewo.png"></Image>
             </Button>
@@ -20,7 +20,7 @@
             </Button>
 
         </StackPanel>
-        <Button Click="polub">Polub</Button>
-        <TextBlock x:Name="polubienia">polubienia</TextBlock>
+        <Button Width="50" Click="polub">Polub</Button>
+        <TextBlock x:Name="polubienia" HorizontalAlignment="Center">polubienia</TextBlock>
     </StackPanel>
 </Window>
